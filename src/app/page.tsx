@@ -5,13 +5,13 @@
   import Flower1 from '@/assets/flower.png';
   import Flower2 from '@/assets/flower2.png';
   import Image from "next/image";
-
+  import Link from "next/link";
 
   export default function Home() {
     return (
       <Pagina>
 
-      <div className="mt-[100px] flex" id='welcome'>
+      <div className="mt-[100px] flex justify-center" id='welcome'>
 
           <div className="flower">
               <Image src={FirstFlower} alt="flor" width={350} className="mr-[80px]"/>
@@ -24,9 +24,13 @@
 
               <br />
 
-              <button className="bg-gradient-to-r from-[#bf4e83e1] to-[#000a90d4] px-6 py-2 text-white uppercase font-bold rounded-md">Saiba mais</button>
+              <button className="bg-gradient-to-r from-[#bf4e83e1] to-[#000a90d4] px-6 py-2 text-white uppercase font-bold rounded-md">
+                <Link href="#aboutUs">
+                Saiba mais
+                </Link></button>
           </div>
       </div>
+      
 
       <div className="flex justify-center mt-[50px] mb-[50px]">
           <Image src={Flower1} alt="flor" width={150}/>
