@@ -52,7 +52,7 @@
          <Image src={Flower2} alt="flor" width={150}/>
     </div>
 
-    <div id='abousUs'>
+    <div id='aboutUs'>
       <h1 className="text-center text-[50px] font-bahianita">Sobre Nós</h1>
       <p className="text-center mr-[220px] ml-[220px]">
         A educação em STEM tem sido chave para a transformação digital dos últimos tempos e prepara a galera para o mercado de trabalho, com carreiras que estão bombando. A Agenda 2030, que tem 17 Objetivos de Desenvolvimento Sustentável (ODS), fala sobre vários temas, incluindo educação (ODS 4) e <b>igualdade de gênero (ODS 5)</b>. Para alcançar esses objetivos, é essencial garantir mais igualdade nas oportunidades educacionais e no acesso das mulheres a carreiras em STEM.
@@ -96,6 +96,20 @@
 
     <div className="flex justify-center mt-[50px] mb-[50px]">
         <Image src={Flower2} alt="flor" width={150}/>
+    </div>
+
+    <div id='projects'>
+      <h1 className="text-center text-[50px] font-bahianita">Projetos</h1>
+      <div className='flex justify-center'>
+            {/* <div className='containerProjects'>
+                {projects && projects.map((project) => (
+                  <div className='project'>
+                    <h3 key={project.id}>{project.name}</h3>
+                    <Link to={`/projects/${project.id}`}>Detalhes</Link>
+                  </div>
+                ))}
+            </div>  */}
+        </div>
     </div>
 
       </Pagina>

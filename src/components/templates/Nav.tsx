@@ -9,7 +9,10 @@ export default function Nav(){
             </div>
 
             <nav className="flex justify-center items-right gap-2">
-                <NavItem text="Sobre" href="#aboutUs" />
+
+                <NavItem text="STEM" href="#stem" />
+
+                <NavItem text="Sobre nós" href="#aboutUs" />
 
                 <NavItem text="Fatec Jahu" href="#fatecJahu" />
 
