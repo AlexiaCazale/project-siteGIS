@@ -22,7 +22,7 @@ export default function ProjectDetails(props: ProjectDetailsProps) {
           />
         </div>
         <div className="text-left w-[50%] mt=[70px]">
-          <h1 className="text-[70px] font-bahianita mt-[50px]">
+          <h1 className="text-[90px] font-bahianita mt-[50px]">
             {project.name}
           </h1>
           <p>{project.description}</p>

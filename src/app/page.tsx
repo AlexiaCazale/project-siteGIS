@@ -9,7 +9,7 @@ import Image from "next/image";
 import Link from "next/link";
 import obterProjects from "@/data/service/obterProject";
 import getMembers from "@/data/service/getMember";
-// import ProjectItem from "@/components/projeto/ProjectItem";
+import ScrollToTopButton from "./scrollBtn";
 
 const projects = await obterProjects();
 const members = await getMembers();
@@ -28,8 +28,8 @@ export default function Home() {
           />
         </div>
 
-        <div className="text-left w-[50%] mt=[70px]">
-          <h1 className="text-[70px] font-bahianita mt-[50px]">
+        <div className="text-left w-[50%] mt=[50px]">
+          <h1 className="text-[90px] font-bahianita mt-[50px]">
             Girls in <span className="font-comforter text-[#BF4E83]">STEM</span>
           </h1>
           <p>
@@ -51,7 +51,7 @@ export default function Home() {
       </div>
 
       <div id="stem">
-        <h1 className="text-center text-[50px] font-bahianita">
+        <h1 className="text-center text-[60px] font-bahianita">
           O que é STEM?
         </h1>
         <div className="text-center mr-[220px] ml-[220px]">
@@ -72,7 +72,7 @@ export default function Home() {
           <br />
         </div>
         <div className="text-start mr-[220px] ml-[220px]">
-          <h4 className="font-bahianita text-[30px] text-center">
+          <h4 className="font-bahianita text-[50px] text-center">
             Por que a{" "}
             <span className="font-comforter text-[#BF4E83]">STEM</span> existe?
           </h4>
@@ -107,7 +107,7 @@ export default function Home() {
       </div>
 
       <div id="aboutUs">
-        <h1 className="text-center text-[50px] font-bahianita">Sobre Nós</h1>
+        <h1 className="text-center text-[60px] font-bahianita">Sobre Nós</h1>
         <p className="text-center mr-[220px] ml-[220px]">
           A educação em STEM tem sido chave para a transformação digital dos
           últimos tempos e prepara a galera para o mercado de trabalho, com
@@ -164,7 +164,7 @@ export default function Home() {
       </div>
 
       <div id="fatecJahu">
-        <h1 className="text-center text-[50px] font-bahianita">Fatec Jahu</h1>
+        <h1 className="text-center text-[60px] font-bahianita">Fatec Jahu</h1>
         <div className="flex justify-center mb-[20px]">
           <Image src={Fatec} alt="STEM" width={700} />
         </div>
@@ -202,7 +202,7 @@ export default function Home() {
       </div>
 
       <div id="projects">
-        <h1 className="text-center text-[50px] font-bahianita">Projetos</h1>
+        <h1 className="text-center text-[60px] font-bahianita">Projetos</h1>
         <div className="flex justify-center">
           <div className="flex">
             {projects &&
@@ -241,7 +241,7 @@ export default function Home() {
       </div>
 
       <div id="members">
-        <h1 className="text-center text-[50px] font-bahianita">Membros</h1>
+        <h1 className="text-center text-[60px] font-bahianita">Membros</h1>
         <div className="flex justify-center">
           <div className="flex justify-center w-[200px]">
             {members.map((member) => (
@@ -266,13 +266,8 @@ export default function Home() {
       </div>
       <br />
 
-      <button
-        className="fixed bottom-12 right-10 p-4 bg-gradient-to-t from-[#bf4e83e1] to-[#000a90d4] text-white rounded-full shadow-lg hover:bg-blue-700 transition duration-300"
-        // onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
-        aria-label="Voltar ao topo"
-      >
-        ↑
-      </button>
+      <ScrollToTopButton/>
+
     </Pagina>
   );
 }
