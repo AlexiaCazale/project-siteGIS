@@ -7,7 +7,7 @@ interface NavItemProps{
 
 export default function NavItem(props: NavItemProps){
     return (
-        <div className="flex items-center gap-1 px-2 text-white uppercase font-bold">
+        <div className="flex items-center gap-1 px-2 text-white uppercase font-bold hover:text-black transition-all duration-200 ease-in-out">
            
             <Link href={props.href} className="text-sm">
                 {props.text}
