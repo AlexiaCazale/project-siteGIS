@@ -22,12 +22,12 @@ export default function Home() {
             src={FirstFlower}
             alt="flor"
             width={350}
-            className="mr-[80px]"
+            className="mr-[30px]"
           />
         </div>
 
-        <div className="text-left mr-[150px] mt=[70px]">
-          <h1 className="text-[70px] font-bahianita mt-[20px]">
+        <div className="text-left w-[50%] mt=[70px]">
+          <h1 className="text-[70px] font-bahianita mt-[50px]">
             Girls in <span className="font-comforter text-[#BF4E83]">STEM</span>
           </h1>
           <p>
@@ -212,7 +212,7 @@ export default function Home() {
                   >
                     {project.name}
                   </h3>
-                  {/* <Link to={`/projects/${project.id}`}>Detalhes</Link> */}
+                  <Link href={`/projects/${project.id}`}>Detalhes</Link>
                 </div>
               ))}
           </div>

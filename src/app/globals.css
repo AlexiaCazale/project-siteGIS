@@ -6,6 +6,11 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --background: #FFF5F9;
   --foreground: #171717;
@@ -26,4 +31,8 @@ body {
 
 .upper-roman {
   list-style-type: upper-roman;
+}
+
+.p-8{
+  padding:0;
 }
