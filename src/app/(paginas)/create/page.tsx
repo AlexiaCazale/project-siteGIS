@@ -1,5 +1,9 @@
+import PaginaAdmin from "@/components/adminTemplate/Pagina";
+
 export default function PaginaCreate(){
     return(
-        <h1>Criando dados</h1>
+        <PaginaAdmin>
+            <h1>Escolha um componente</h1>
+        </PaginaAdmin>
     )
 }
