@@ -15,6 +15,7 @@ export default {
       fontFamily: {
         comforter: ['Comforter', 'serif'], 
         bahianita: ['Bahianita', 'serif'], 
+        arya: ['Arya', 'serif'], 
       },
     },
   },
