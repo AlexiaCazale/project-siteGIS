@@ -92,7 +92,7 @@ export default function Home() {
             resolução de problemas e a criatividade.
           </li>{" "}
           <br />
-          <p>
+          <p className="text-center">
             Em resumo, a STEM é uma abordagem educacional que busca conectar as
             disciplinas de ciência, tecnologia, engenharia e matemática para
             preparar os estudantes para os desafios do século XXI.
