@@ -5,7 +5,7 @@ const projects: Project[] = [
         id: 1,
         name: "Inteligência Artificial",
         description: "Projeto de apresentação feita pela profª Cida Zem no dia xx/xx para os alunos da escola y",
-        image: "../assets/photos/"
+        image: "../assets/projects/ia-capa.jpeg"
     },
     {
         id: 2,

@@ -40,7 +40,7 @@ export default function ProjectDetails(props: ProjectDetailsProps) {
         <div></div>
         <div className="flex justify-center mb-[20px]">
           <button className="bg-gradient-to-r from-[#bf4e83e1] to-[#000a90d4] px-6 py-2 text-white uppercase font-bold rounded-md">
-            <Link href="/">Voltar</Link>
+            <Link href="/#projects">Voltar</Link>
           </button>
         </div>
       </div>

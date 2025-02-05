@@ -1,5 +1,6 @@
 import Pagina from "@/components/templates/Pagina";
 import FirstFlower from "@/assets/firstFlower.png";
+import IACapa from "@/assets/projects/ia-capa.jpeg";
 import GroupSTEM from "@/assets/groupStem.png";
 import Fatec from "@/assets/fatec.png";
 import Flower1 from "@/assets/flower.png";
@@ -206,14 +207,20 @@ export default function Home() {
             {projects &&
               projects.map((project) => (
                 <div className="w-[160px] h-[240px] rounded-[8px] mt-[10px] mr-[15px] text-center bg-[#ffb4b4]">
-                  <h3
-                    key={project.id}
-                    className="font-arya text-[25px] text-white font-bold"
-                  >
-                    {project.name}
-                  </h3>
-                  <Link href={`/projects/${project.id}`}>Detalhes</Link>
+                  <Link href={`/projects/${project.id}`}>
+                    <h3
+                      key={project.id}
+                      className="font-arya text-[25px] mt-[50%] text-white font-bold"
+                    >
+                      {project.name}
+                    </h3>
+                  </Link>
                 </div>
+                //   <Image src={project.image} className="rounded-[8px] mt-[10px] mr-[15px] text-center bg-[#ffb4b4]" alt={"capa"} width={160} height={240}>
+                //   <Link href={`/projects/${project.id}`}>
+                //     <h3 key={project.id}className="font-arya text-[25px] mt-[50%] text-white font-bold">{project.name}</h3>
+                //   </Link>
+                // </Image>
               ))}
           </div>
         </div>
@@ -230,14 +237,32 @@ export default function Home() {
             {members.map((member) => (
               <div className="member">
                 <div className="w-[180px] h-[180px] rounded-full mt-[10px] mr-[15px] text-center bg-[#ffb4b4]"></div>
-                <h3 key={member.id} className="mt-[10px] mr-[15px] text-center text-black font-bold font-arya text-[22px]">{member.name}</h3>
-                <h5 key={member.id} className="mt-[10px] mr-[15px] text-center text-black">{member.description}</h5>
+                <h3
+                  key={member.id}
+                  className="mt-[10px] mr-[15px] text-center text-black font-bold font-arya text-[22px]"
+                >
+                  {member.name}
+                </h3>
+                <h5
+                  key={member.id}
+                  className="mt-[10px] mr-[15px] text-center text-black"
+                >
+                  {member.description}
+                </h5>
               </div>
             ))}
           </div>
         </div>
       </div>
+      <br />
 
+      <button
+        className="fixed bottom-12 right-10 p-4 bg-gradient-to-t from-[#bf4e83e1] to-[#000a90d4] text-white rounded-full shadow-lg hover:bg-blue-700 transition duration-300"
+        // onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+        aria-label="Voltar ao topo"
+      >
+        ↑
+      </button>
     </Pagina>
   );
 }
