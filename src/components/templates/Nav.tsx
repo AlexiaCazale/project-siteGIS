@@ -8,7 +8,7 @@ export default function Nav(){
                 <span className="font-white">Girls in STEM</span>
             </div>
 
-            <nav className="flex justify-center items-right gap-2">
+            <nav className="flex justify-center items-right gap-2 ">
 
                 <NavItem text="STEM" href="#stem" />
 
