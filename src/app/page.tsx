@@ -242,7 +242,7 @@ export default function Home() {
           <div className="flex z-0">
             {projects &&
               projects.map((project) => (
-                <div className="2xl:w-[260px] 2xl:h-[340px] mt-[10px] mr-auto z-0 p-1 xl:p-2">
+                <div className="2xl:w-[260px] 2xl:h-[340px] mt-[10px] mr-auto z-0 p-2">
                   <Link href={`/projects/${project.id}`}>
                     <div>
                       <div className="relative w-[160px] h-[210px] 2xl:w-[260px] h-[340px] rounded-[8px] mt-[10px] text-center bg-[#ffb4b4] hover:bg-[#BF4E83]/80 duration-200 ease-in-out">
@@ -278,19 +278,19 @@ export default function Home() {
           Membros
         </h1>
         <div className="flex justify-center">
-          <div className="flex justify-center w-[200px]">
+          <div className="flex justify-center w-min">
             {members.map((member) => (
-              <div className="member">
-                <div className="w-[180px] h-[180px] rounded-full mt-[10px] mr-[15px] text-center bg-[#ffb4b4]"></div>
+              <div className="p-2">
+                <div className="w-[150px] h-[150px] rounded-full mt-[10px]text-center bg-[#ffb4b4]"></div>
                 <h3
                   key={member.id}
-                  className="mt-[10px] mr-[15px] text-center text-black font-bold font-arya text-[22px]"
+                  className="mt-[10px] text-center text-black font-bold font-arya text-[22px]"
                 >
                   {member.name}
                 </h3>
                 <h5
                   key={member.id}
-                  className="mt-[10px] mr-[15px] text-center text-black"
+                  className="mt-[10px] text-center text-black"
                 >
                   {member.description}
                 </h5>
