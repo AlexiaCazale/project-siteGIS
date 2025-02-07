@@ -1,8 +1,6 @@
 'use client';
 
 import NavItem from "./NavItem";
-import { Dropdown } from '@mui/base/Dropdown';
-import { MenuButton } from '@mui/base/MenuButton';
 import { FaBars } from 'react-icons/fa';
 import { useState } from 'react'
 
