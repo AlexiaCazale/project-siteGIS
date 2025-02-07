@@ -251,7 +251,7 @@ export default function Home() {
                           className="rounded-[8px] bg-[#BF4E83] object-cover opacity-35 z-0"
                           alt="capa"
                           width={160}
-                          height={240}
+                          height={210}
                         />
                         <h3 className="absolute top-[50%] bottom-[50%] font-arya text-[25px] text-center text-black font-bold uppercase justify-center">
                           {project.name}
