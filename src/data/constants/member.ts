@@ -10,7 +10,7 @@ const members: Member[] = [
         {
             id: 2,
             name: "Aléxia Cazale",
-            description: "Estudante de Sistemas para Internet",
+            description: "Estudante",
             image: "../assets/photos/"
         }
 ]
