@@ -242,23 +242,18 @@ export default function Home() {
           <div className="flex z-0">
             {projects &&
               projects.map((project) => (
-                // <div className="w-[160px] h-[240px] rounded-[8px] mt-[10px] mr-[15px] text-center bg-[#ffb4b4]">
-                //   <Link href={`/projects/${project.id}`}>
-                //     <h3 key={project.id} className="font-arya text-[25px] mt-[50%] text-white font-bold">{project.name}</h3>
-                //   </Link>
-                // </div>
-                <div className="2xl:w-[260px] h-[340px] mt-[10px] mr-[15px] z-0">
+                <div className="2xl:w-[260px] 2xl:h-[340px] mt-[10px] mr-auto z-0 p-1 xl:p-2">
                   <Link href={`/projects/${project.id}`}>
                     <div>
-                      <div className="relative 2xl:w-[260px] h-[340px] rounded-[8px] mt-[10px] mr-[15px] text-center bg-[#ffb4b4] hover:bg-[#BF4E83]/80 duration-200 ease-in-out">
+                      <div className="relative w-[160px] h-[210px] 2xl:w-[260px] h-[340px] rounded-[8px] mt-[10px] text-center bg-[#ffb4b4] hover:bg-[#BF4E83]/80 duration-200 ease-in-out">
                         <Image
                           src={project.image}
-                          className="rounded-[8px] bg-[#BF4E83] h-[240px] w-[160px] object-cover opacity-35 z-0"
+                          className="rounded-[8px] bg-[#BF4E83] object-cover opacity-35 z-0"
                           alt="capa"
-                          width={260}
-                          height={340}
+                          width={160}
+                          height={240}
                         />
-                        <h3 className="absolute top-[25%] bottom-[50%] font-arya text-[25px] text-center mt-[10px] text-black font-bold">
+                        <h3 className="absolute top-[50%] bottom-[50%] font-arya text-[25px] text-center text-black font-bold uppercase justify-center">
                           {project.name}
                         </h3>
                       </div>

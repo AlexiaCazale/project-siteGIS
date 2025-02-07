@@ -2,7 +2,7 @@ import NavItem from "./NavItem";
 
 export default function Nav(){
     return (
-        <aside className="flex justify-between items-center bg-gradient-to-r from-[#bf4e83e1] to-[#000a90d4] px-6 py-5 text-white uppercase font-bold fixed top-0 left-0 w-screen">
+        <aside className="flex justify-between items-center bg-gradient-to-r from-[#bf4e83e1] to-[#000a90d4] px-6 py-5 text-white uppercase font-bold fixed top-0 left-0 w-full z-10">
 
             <div className="flex items-center gap-2">
                 <span className="font-white">Girls in STEM</span>

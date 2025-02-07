@@ -6,7 +6,7 @@ import Footer from "./Footer";
 export default function PaginaDetails(props: any){
 
     return (
-        <div className="flex flex-col h-screen w-screen">
+        <div className="flex flex-col h-screen w-full">
             <NavDetails/>
             <div className="flex-1 flex">
                 <main className="p-8">{props.children}</main>
