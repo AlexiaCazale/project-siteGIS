@@ -9,32 +9,22 @@ const members = await getMembers();
 export default function Admin() {
   return (
     <PaginaAdmin>
-      <div className="justfy-center text-center p-5 ml-[25px]">
+      <div className="justfy-center p-5 ml-[25px] w-full">
         {/* <h1>Bem vindo(a)!</h1> */}
 
         <div id="projects">
-          <h1 className="text-start text-[30px] uppercase font-bold mt-[15px]">Projetos</h1>
-          <div className="flex justify-center">
-            <div className="flex">
+          <h1 className="text-start text-[30px] uppercase font-bold mt-[15px]">
+            Projetos
+          </h1>
+          <div className="justify-center mt-5">
+            <div className="flex gap-5">
               {projects &&
                 projects.map((project) => (
-                  <div className="w-[160px] h-[240px] mt-[10px] mr-[15px]">
-                    <Link href={`/projects/${project.id}`}>
-                      <div>
-                        <div className="relative w-[160px] h-[240px] rounded-[8px] mt-[10px] mr-[15px] text-center bg-[#ffb4b4]">
-                          <Image
-                            src={project.image}
-                            className="rounded-[8px] bg-[#BF4E83] h-[240px] w-[160px] object-cover opacity-35"
-                            alt="capa"
-                            width={160}
-                            height={240}
-                          />
-                          <h3 className="absolute top-[25%] bottom-[50%] font-arya text-[25px] text-center mt-[10px] text-black font-bold">
-                            {project.name}
-                          </h3>
-                        </div>
-                      </div>
-                    </Link>
+                  <div className="w-[300px] h-[300px] bg-[#C7A2EC] rounded-[6px]">
+                    <div className="text-center p-2 list-inside decimal">
+                      <h2 className=" font-bold py-1 px-1">{project.name}</h2>
+                      <p className="text-start py-2 px-1">{project.description}</p>
+                    </div>
                   </div>
                 ))}
             </div>
@@ -42,25 +32,18 @@ export default function Admin() {
         </div>
 
         <div id="members" className="mt-[30px]">
-          <h1 className="text-start text-[30px] uppercase font-bold">Membros</h1>
-          <div className="flex justify-center">
-            <div className="flex justify-center w-[200px]">
+          <h1 className="text-start text-[30px] uppercase font-bold">
+            Membros
+          </h1>
+          <div className="justify-center mt-5">
+            <div className="flex gap-5">
               {members.map((member) => (
-                <div className="member">
-                  <div className="w-[180px] h-[180px] rounded-full mt-[10px] mr-[15px] text-center bg-[#ffb4b4]"></div>
-                  <h3
-                    key={member.id}
-                    className="mt-[10px] mr-[15px] text-center text-black font-bold font-arya text-[22px]"
-                  >
-                    {member.name}
-                  </h3>
-                  <h5
-                    key={member.id}
-                    className="mt-[10px] mr-[15px] text-center text-black"
-                  >
-                    {member.description}
-                  </h5>
+                <div className="w-[300px] h-[100px] bg-[#C7A2EC] rounded-[6px]">
+                <div className="text-center p-2 list-inside decimal">
+                  <h2 className="font-bold py-1 px-1">{member.name}</h2>
+                  <p className="py-2 px-1">{member.description}</p>
                 </div>
+              </div>
               ))}
             </div>
           </div>
