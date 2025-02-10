@@ -36,7 +36,7 @@ export default function Home() {
               STEM
             </span>
           </h1>
-          <p className="2xl:text-[25px] lg:text-[18px] md:text-[14px]">
+          <p className="lg:text-[18px] md:text-[14px]">
             Um estudo para estimular e desenvolver competências em STEM
             (Ciência, Tecnologia, Engenharia e Matemática) nas diversas etapas
             do ensino!
@@ -47,7 +47,7 @@ export default function Home() {
           <button className="bg-gradient-to-r from-[#bf4e83e1] to-[#000a90d4] px-6 py-2 text-white uppercase font-bold rounded-md">
             <Link
               href="#aboutUs"
-              className="2xl:text-[25px] lg:text-[18px] md:text-[14px]"
+              className="  lg:text-[18px] md:text-[14px]"
             >
               Saiba mais
             </Link>
@@ -68,13 +68,13 @@ export default function Home() {
           O que é STEM?
         </h1>
         <div className="text-center">
-          <p className="2xl:text-[25px] lg:text-[18px] md:text-[14px] ml-[10%] mr-[10%]">
+          <p className="  lg:text-[18px] md:text-[14px] ml-[10%] mr-[10%]">
             STEM é uma sigla em inglês que significa Science, Technology,
             Engineering, and Mathematics. Em português, traduzimos como Ciência,
             Tecnologia, Engenharia e Matemática. Mas o que isso significa?
           </p>
           <br />
-          <p className="2xl:text-[25px] lg:text-[18px] md:text-[14px] ml-[10%] mr-[10%]">
+          <p className="  lg:text-[18px] md:text-[14px] ml-[10%] mr-[10%]">
             Imagine construir uma casa. Você precisa de um arquiteto
             (engenharia) para projetar a casa, um engenheiro civil para
             construir a estrutura, um eletricista (tecnologia) para instalar a
@@ -92,25 +92,25 @@ export default function Home() {
             </span>{" "}
             existe?
           </h4>
-          <li className="text-[16px] 2xl:text-[25px] xl:text-[18px] lg:text-[18px] md:text-[14px] ml-[10%] mr-[10%]">
+          <li className="text-[16px]   xl:text-[18px] lg:text-[18px] md:text-[14px] ml-[10%] mr-[10%]">
             <b>Mundo em constante mudança:</b> A tecnologia avança rapidamente e
             a STEM nos ajuda a entender e acompanhar essas mudanças.
           </li>
-          <li className="text-[16px] 2xl:text-[25px] xl:text-[18px] lg:text-[18px] md:text-[14px] ml-[10%] mr-[10%]">
+          <li className="text-[16px]   xl:text-[18px] lg:text-[18px] md:text-[14px] ml-[10%] mr-[10%]">
             <b>Resolução de problemas:</b> Problemas complexos, como mudanças
             climáticas e doenças, exigem soluções criativas e interdisciplinares
             que a STEM pode oferecer.
           </li>
-          <li className="text-[16px] 2xl:text-[25px] xl:text-[18px] lg:text-[18px] md:text-[14px] ml-[10%] mr-[10%]">
+          <li className="text-[16px]   xl:text-[18px] lg:text-[18px] md:text-[14px] ml-[10%] mr-[10%]">
             <b>Preparo para o futuro:</b> Profissionais com habilidades em STEM
             são muito procurados no mercado de trabalho.
           </li>
-          <li className="text-[16px] 2xl:text-[25px] xl:text-[18px] lg:text-[18px] md:text-[14px] ml-[10%] mr-[10%]">
+          <li className="text-[16px]   xl:text-[18px] lg:text-[18px] md:text-[14px] ml-[10%] mr-[10%]">
             <b>Pensamento crítico:</b> A STEM incentiva o pensamento crítico, a
             resolução de problemas e a criatividade.
           </li>{" "}
           <br />
-          <p className="text-[16px] text-center 2xl:text-[25px] lg:text-[18px] md:text-[14px] ml-[10%] mr-[10%]">
+          <p className="text-[16px] text-center   lg:text-[18px] md:text-[14px] ml-[10%] mr-[10%]">
             Em resumo, a STEM é uma abordagem educacional que busca conectar as
             disciplinas de ciência, tecnologia, engenharia e matemática para
             preparar os estudantes para os desafios do século XXI.
@@ -130,7 +130,7 @@ export default function Home() {
         <h1 className="font-bahianita text-[45px] text-center 2xl:text-[70px] xl:text-[50px] lg:text-[40px] md:text-[30px]">
           Sobre Nós
         </h1>
-        <p className="text-center 2xl:text-[25px] lg:text-[18px] md:text-[14px] ml-[10%] mr-[10%]">
+        <p className="text-center   lg:text-[18px] md:text-[14px] ml-[10%] mr-[10%]">
           A educação em STEM tem sido chave para a transformação digital dos
           últimos tempos e prepara a galera para o mercado de trabalho, com
           carreiras que estão bombando. A Agenda 2030, que tem 17 Objetivos de
@@ -140,7 +140,7 @@ export default function Home() {
           educacionais e no acesso das mulheres a carreiras em STEM.
         </p>
         <br />
-        <p className="text-center 2xl:text-[25px] lg:text-[18px] md:text-[14px] ml-[10%] mr-[10%] mb-[15px]">
+        <p className="text-center   lg:text-[18px] md:text-[14px] ml-[10%] mr-[10%] mb-[15px]">
           Este projeto tem como objetivo fortalecer as habilidades de mulheres
           em STEM e incentivá-las a entrar nesse mercado. Vamos investigar como
           estimular o desenvolvimento delas desde as primeiras fases da
@@ -154,31 +154,31 @@ export default function Home() {
             <Image
               src={GroupSTEM}
               alt="STEM"
-              className="w-[200px] ml-auto mr-auto 2xl:w-[350px] xl:w-[220px] lg:w-[230px] lg:h-[300px]"
+              className="w-[200px] ml-auto mr-auto xl:w-[220px] lg:w-[230px] lg:h-[300px]"
             />
 
-            <div className="text-center 2xl, xl, lg, md:text-start  ml-[5%] mr-[10%] list-inside upper-roman">
-              <h2 className="text-[20px] mt-[5px] 2xl:text-[30px] xl:text-[20px] lg:text-[20px] md:text-[13px] font-bold">
+            <div className="text-start 2xl, xl, lg, md:text-start md:ml-[5%] list-inside upper-roman">
+              <h2 className="text-center md:text-start text-[20px] mt-[5px] 2xl:text-[30px] xl:text-[20px] lg:text-[20px] md:text-[13px] font-bold">
                 Nosso Objetivo:{" "}
               </h2>
 
-              <li className="text-[16px] 2xl:text-[25px] xl:text-[18px] lg:text-[18px] md:text-[14px]">
+              <li className="text-[16px] xl:text-[18px] lg:text-[18px] md:text-[14px]">
                 Mostrar para as mulheres que elas podem, sim, seguir carreiras
                 em STEM com a mesma confiança que os homens;
               </li>
-              <li className="text-[16px] 2xl:text-[25px] xl:text-[18px] lg:text-[18px] md:text-[14px]">
+              <li className="text-[16px]   xl:text-[18px] lg:text-[18px] md:text-[14px]">
                 Conscientizar os homens, especialmente os gestores, a contratar
                 mulheres para cargos em STEM sem preconceitos de gênero;
               </li>
-              <li className="text-[16px] 2xl:text-[25px] xl:text-[18px] lg:text-[18px] md:text-[14px]">
+              <li className="text-[16px]   xl:text-[18px] lg:text-[18px] md:text-[14px]">
                 Apresentar mulheres inspiradoras de STEM, tanto do Brasil quanto
                 do mundo, como referências;
               </li>
-              <li className="text-[16px] 2xl:text-[25px] xl:text-[18px] lg:text-[18px] md:text-[14px]">
+              <li className="text-[16px]   xl:text-[18px] lg:text-[18px] md:text-[14px]">
                 Garantir que as meninas tenham experiências positivas e
                 envolventes em aulas de STEM desde cedo;
               </li>
-              <li className="text-[16px] 2xl:text-[25px] xl:text-[18px] lg:text-[18px] md:text-[14px]">
+              <li className="text-[16px]   xl:text-[18px] lg:text-[18px] md:text-[14px]">
                 Quebrar o estereótipo de que meninas devem brincar com bonecas e
                 meninos com carros, incentivando todos a explorar o que
                 quiserem!
@@ -208,7 +208,7 @@ export default function Home() {
           />
         </div>
         <div className="text-center mr-[10%] ml-[10%]">
-          <p className="2xl:text-[25px] lg:text-[18px] md:text-[14px]">
+          <p className="  lg:text-[18px] md:text-[14px]">
             A FATEC Jahu é uma instituição pública de ensino superior localizada
             na cidade de Jaú, interior de São Paulo, e oferece cursos de
             graduação tecnológica em áreas como Análise e Desenvolvimento de
@@ -217,7 +217,7 @@ export default function Home() {
             habilidades práticas e teóricas voltadas para o mercado de trabalho.
           </p>{" "}
           <br />
-          <p className="2xl:text-[25px] lg:text-[18px] md:text-[14px]">
+          <p className="  lg:text-[18px] md:text-[14px]">
             A faculdade é parte do Sistema FATEC, vinculado ao Centro Paula
             Souza, e foca em uma formação que integra teoria e prática, com
             infraestrutura moderna, incluindo salas de aula e laboratórios
@@ -226,7 +226,7 @@ export default function Home() {
             alunos uma experiência mais próxima do mercado profissional.
           </p>{" "}
           <br />
-          <p className="2xl:text-[25px] lg:text-[18px] md:text-[14px]">
+          <p className="  lg:text-[18px] md:text-[14px]">
             Com um corpo docente qualificado e uma abordagem pedagógica centrada
             no desenvolvimento de competências técnicas, a FATEC Jahu prepara os
             alunos para enfrentar os desafios do mercado de trabalho em setores
@@ -262,7 +262,7 @@ export default function Home() {
                         width={160}
                         height={210}
                       />
-                      <h3 className="absolute  inset-0 flex items-center justify-center font-arya text-[25px] text-center text-black font-bold uppercase justify-center">
+                      <h3 className="absolute inset-0 flex items-center justify-center font-arya text-[25px] text-center text-black font-bold uppercase justify-center">
                         {project.name}
                       </h3>
                     </div>

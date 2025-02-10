@@ -43,5 +43,10 @@ html {
 }
 
 li{
-  font-size: 20px
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li::marker {
+  font-weight: bold;
 }
