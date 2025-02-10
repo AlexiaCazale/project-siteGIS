@@ -11,6 +11,9 @@ import obterProjects from "@/data/service/obterProject";
 import getMembers from "@/data/service/getMember";
 import ScrollToTopButton from "./scrollBtn";
 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+
 const projects = await obterProjects();
 const members = await getMembers();
 
@@ -45,10 +48,7 @@ export default function Home() {
           <br />
 
           <button className="bg-gradient-to-r from-[#bf4e83e1] to-[#000a90d4] px-6 py-2 text-white uppercase font-bold rounded-md">
-            <Link
-              href="#aboutUs"
-              className="  lg:text-[18px] md:text-[14px]"
-            >
+            <Link href="#aboutUs" className="  lg:text-[18px] md:text-[14px]">
               Saiba mais
             </Link>
           </button>
@@ -248,29 +248,31 @@ export default function Home() {
         <h1 className="text-[45px] text-center 2xl:text-[70px] xl:text-[50px] lg:text-[40px] md:text-[30px] font-bahianita">
           Projetos
         </h1>
-        <div className="flex justify-center">
-          <div className="flex z-0">
-            {projects &&
-              projects.map((project) => (
-                <div className="mt-[10px] z-0 p-2">
-                  <Link href={`/projects/${project.id}`}>
-                    <div className="relative w-[160px] 2xl:w-[210px] 2xl:h-[280px] rounded-[8px] mt-[10px] text-center bg-[#ffb4b4] hover:bg-[#BF4E83]/80 duration-200 ease-in-out">
-                      <Image
-                        src={project.image}
-                        className="relative rounded-[8px] bg-[#BF4E83] object-cover opacity-35 2xl:w-[210px] 2xl:h-[280px]"
-                        alt="capa"
-                        width={160}
-                        height={210}
-                      />
-                      <h3 className="absolute inset-0 flex items-center justify-center font-arya text-[25px] text-center text-black font-bold uppercase justify-center">
-                        {project.name}
-                      </h3>
-                    </div>
-                  </Link>
-                </div>
-              ))}
+        {/* <Carousel> */}
+          <div className="flex justify-center">
+            <div className="flex z-0">
+              {projects &&
+                projects.map((project) => (
+                  <div className="mt-[10px] z-0 p-2">
+                    <Link href={`/projects/${project.id}`}>
+                      <div className="relative w-[160px] 2xl:w-[210px] 2xl:h-[280px] rounded-[8px] mt-[10px] text-center bg-[#ffb4b4] hover:bg-[#BF4E83]/80 duration-200 ease-in-out">
+                        <Image
+                          src={project.image}
+                          className="relative rounded-[8px] bg-[#BF4E83] object-cover opacity-35 2xl:w-[210px] 2xl:h-[280px]"
+                          alt="capa"
+                          width={160}
+                          height={210}
+                        />
+                        <h3 className="absolute inset-0 flex items-center justify-center font-arya text-[25px] text-center text-black font-bold uppercase justify-center">
+                          {project.name}
+                        </h3>
+                      </div>
+                    </Link>
+                  </div>
+                ))}
+            </div>
           </div>
-        </div>
+        {/* </Carousel> */}
       </div>
 
       <div className="flex justify-center mt-[50px] mb-[50px]">
@@ -285,11 +287,11 @@ export default function Home() {
         <h1 className="text-[45px] text-center 2xl:text-[70px] xl:text-[50px] lg:text-[40px] md:text-[30px] font-bahianita">
           Membros
         </h1>
-        <div className="flex justify-center">
-          <div className="flex justify-center w-min">
+        <div className="flex justify-center items-center mr-[10%] ml-[10%]">
+          <div className="flex justify-center flex-wrap">
             {members.map((member) => (
-              <div className="p-2">
-                <div className="w-[150px] h-[150px] 2xl:w-[220px] 2xl:h-[220px] rounded-full mt-[10px]text-center bg-[#ffb4b4]"></div>
+              <div className="p-2 flex flex-col items-center">
+                <div className="flex justify-center items-center w-[150px] h-[150px] 2xl:w-[190px] 2xl:h-[190px] rounded-full mt-[10px]text-center bg-[#ffb4b4]"></div>
                 <h3
                   key={member.id}
                   className="mt-[10px] text-center text-black font-bold font-arya text-[22px] xl:text-[28px]"

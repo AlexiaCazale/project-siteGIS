@@ -12,7 +12,19 @@ const members: Member[] = [
             name: "Aléxia Cazale",
             description: "Estudante",
             image: "../assets/photos/"
-        }
+        },
+        {
+            id:  3,
+            name: "Cida Zem",
+            description: "Professora na Fatec Jahu",
+            image: "../assets/photos/"
+        },
+        {
+            id: 4,
+            name: "Aléxia Cazale",
+            description: "Estudante",
+            image: "../assets/photos/"
+        },
 ]
 
 export default members;
