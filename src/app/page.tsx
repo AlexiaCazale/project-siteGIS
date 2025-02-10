@@ -7,14 +7,12 @@ import Flower1 from "@/assets/flower.png";
 import Flower2 from "@/assets/flower2.png";
 import Image from "next/image";
 import Link from "next/link";
-import obterProjects from "@/data/service/obterProject";
+import { EmblaCarousel } from "@/components/projeto/EmblaCarousel";
+// import obterProjects from "@/data/service/obterProject";
 import getMembers from "@/data/service/getMember";
 import ScrollToTopButton from "./scrollBtn";
 
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
-
-const projects = await obterProjects();
+// const projects = await obterProjects();
 const members = await getMembers();
 
 export default function Home() {
@@ -248,31 +246,7 @@ export default function Home() {
         <h1 className="text-[45px] text-center 2xl:text-[70px] xl:text-[50px] lg:text-[40px] md:text-[30px] font-bahianita">
           Projetos
         </h1>
-        {/* <Carousel> */}
-          <div className="flex justify-center">
-            <div className="flex z-0">
-              {projects &&
-                projects.map((project) => (
-                  <div className="mt-[10px] z-0 p-2">
-                    <Link href={`/projects/${project.id}`}>
-                      <div className="relative w-[160px] 2xl:w-[210px] 2xl:h-[280px] rounded-[8px] mt-[10px] text-center bg-[#ffb4b4] hover:bg-[#BF4E83]/80 duration-200 ease-in-out">
-                        <Image
-                          src={project.image}
-                          className="relative rounded-[8px] bg-[#BF4E83] object-cover opacity-35 2xl:w-[210px] 2xl:h-[280px]"
-                          alt="capa"
-                          width={160}
-                          height={210}
-                        />
-                        <h3 className="absolute inset-0 flex items-center justify-center font-arya text-[25px] text-center text-black font-bold uppercase justify-center">
-                          {project.name}
-                        </h3>
-                      </div>
-                    </Link>
-                  </div>
-                ))}
-            </div>
-          </div>
-        {/* </Carousel> */}
+        <EmblaCarousel/>
       </div>
 
       <div className="flex justify-center mt-[50px] mb-[50px]">

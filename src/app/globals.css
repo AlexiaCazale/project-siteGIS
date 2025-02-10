@@ -51,3 +51,20 @@ li{
 li::marker {
   font-weight: bold;
 }
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+@media (min-width: 768px) {
+  .embla__slide {
+    flex: 0 0 5%; 
+  }
+}
