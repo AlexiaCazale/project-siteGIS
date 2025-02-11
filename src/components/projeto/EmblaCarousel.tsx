@@ -30,9 +30,12 @@ export function EmblaCarousel() {
         {/* <div className="flex z-0"> */}
         {projects &&
           projects.map((project) => (
-            <div className="mt-[10px] z-0 p-2 flex items-center justify-center"> 
+            <div className="mt-[10px] z-0 p-2 flex items-center justify-center">
               <Link href={`/projects/${project.id}`}>
-                <div className="relative w-[160px] 2xl:w-[210px] 2xl:h-[280px] rounded-[8px] mt-[10px] text-center bg-[#ffb4b4] hover:bg-[#BF4E83]/80 duration-200 ease-in-out">
+                <div
+                  key={project.id}
+                  className="relative w-[160px] 2xl:w-[210px] 2xl:h-[280px] rounded-[8px] mt-[10px] text-center bg-[#ffb4b4] hover:bg-[#BF4E83]/80 duration-200 ease-in-out"
+                >
                   <Image
                     src={project.image}
                     className="relative rounded-[8px] bg-[#BF4E83] object-cover opacity-35 2xl:w-[210px] 2xl:h-[280px]"
@@ -50,14 +53,14 @@ export function EmblaCarousel() {
         {/* </div> */}
       </div>
 
-      <div className="flex items-center justify-center p-5 gap-8">
+      {/* <div className="flex items-center justify-center p-5 gap-8">
         <button className="embla__prev" onClick={scrollPrev}>
           <IconArrowNarrowLeftDashed size={40}/>
         </button>
         <button className="embla__next" onClick={scrollNext}>
           <IconArrowNarrowRightDashed size={40}/>
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }

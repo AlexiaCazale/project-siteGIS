@@ -258,14 +258,14 @@ export default function Home() {
       </div>
 
       <div id="members">
-        <h1 className="text-[45px] text-center 2xl:text-[70px] xl:text-[50px] lg:text-[40px] md:text-[30px] font-bahianita">
+        <h1 className="text-[45px] text-center 2xl:text-[70px] xl:text-[3.125rem] lg:text-[40px] md:text-[30px] font-bahianita">
           Membros
         </h1>
         <div className="flex justify-center items-center mr-[10%] ml-[10%]">
           <div className="flex justify-center flex-wrap">
             {members.map((member) => (
               <div className="p-5 flex flex-col items-center">
-                <div className="flex justify-center items-center w-[150px] h-[150px] 2xl:w-[190px] 2xl:h-[190px] rounded-full mt-[10px]text-center bg-[#ffb4b4]"></div>
+                <Image className="flex justify-center items-center w-[150px] h-[150px] 2xl:w-[190px] 2xl:h-[190px] rounded-full mt-[10px]text-center bg-[#ffb4b4] object-cover" width={150} height={150} src={member.image} alt={"foto-perfil"}/>
                 <h3
                   key={member.id}
                   className="mt-[10px] text-center text-black font-bold font-arya text-[22px] xl:text-[28px]"
@@ -273,7 +273,6 @@ export default function Home() {
                   {member.name}
                 </h3>
                 <h5
-                  key={member.id}
                   className="mt-[10px] text-center text-black xl:text-25px"
                 >
                   {member.description}
