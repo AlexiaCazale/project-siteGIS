@@ -11,7 +11,7 @@ const projects: Project[] = [
         id: 2,
         name: "Girassol Arduino",
         description: "Projeto de arduino feito pelos alunos do grupo de pesquisa Girls in STEM no dia xx/xx para os alunos da escola y",
-        image: "/projects/ia-capa.jpeg"
+        image: "/projects/girassolCapa.jpeg"
     },
     {
         id: 3,
@@ -23,7 +23,7 @@ const projects: Project[] = [
         id: 4,
         name: "Girassol Arduino",
         description: "Projeto de arduino feito pelos alunos do grupo de pesquisa Girls in STEM no dia xx/xx para os alunos da escola y",
-        image: "/projects/ia-capa.jpeg"
+        image: "/projects/girassolCapa.jpeg"
     }
 ]
 

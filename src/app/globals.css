@@ -63,8 +63,8 @@ li::marker {
   min-width: 0;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .embla__slide {
-    flex: 0 0 5%; 
+    flex: 0 0 50%; 
   }
-} */
+}

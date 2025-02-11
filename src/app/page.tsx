@@ -258,7 +258,7 @@ export default function Home() {
       </div>
 
       <div id="members">
-        <h1 className="text-[45px] text-center 2xl:text-[70px] xl:text-[50px] lg:text-[40px] md:text-[30px] font-bahianita">
+        <h1 className="text-[45px] text-center 2xl:text-[70px] xl:text-[50px] lg:text-[40px] md:text-[30px] zfont-bahianita">
           Membros
         </h1>
         <div className="flex justify-center items-center mr-[10%] ml-[10%]">
