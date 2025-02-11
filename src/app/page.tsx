@@ -258,13 +258,13 @@ export default function Home() {
       </div>
 
       <div id="members">
-        <h1 className="text-[45px] text-center 2xl:text-[70px] xl:text-[50px] lg:text-[40px] md:text-[30px] zfont-bahianita">
+        <h1 className="text-[45px] text-center 2xl:text-[70px] xl:text-[50px] lg:text-[40px] md:text-[30px] font-bahianita">
           Membros
         </h1>
         <div className="flex justify-center items-center mr-[10%] ml-[10%]">
           <div className="flex justify-center flex-wrap">
             {members.map((member) => (
-              <div className="p-2 flex flex-col items-center">
+              <div className="p-5 flex flex-col items-center">
                 <div className="flex justify-center items-center w-[150px] h-[150px] 2xl:w-[190px] 2xl:h-[190px] rounded-full mt-[10px]text-center bg-[#ffb4b4]"></div>
                 <h3
                   key={member.id}
