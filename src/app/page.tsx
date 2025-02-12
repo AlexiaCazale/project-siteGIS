@@ -265,7 +265,7 @@ export default function Home() {
           <div className="gap-8 flex justify-center flex-wrap">
             {news.map((e) => (
               <div className="flex items-center justify-center">
-                <div className="flex flex-col items-center w-[330px] md:h-[380px] xl:h-[400px] rounded-[6px] bg-[#6A74FF]/10 hover:bg-[#6A74FF]/30 shadow-md">
+                <div className="flex flex-col items-center w-[330px] md:h-[380px] xl:h-[400px] rounded-[6px] bg-[#6A74FF]/10 md:hover:bg-[#6A74FF]/30 shadow-md">
                   <Image
                     className="flex justify-center items-center h-[170px] xl:h-[190px] rounded-t-[6px] mt-[10px]text-center object-cover"
                     width={330}
@@ -275,7 +275,7 @@ export default function Home() {
                   />
                   <h3
                     key={e.id}
-                    className=" p-3 mt-[10px] text-[18px] text-center text-black font-bold font-arya xl:text-[20px]"
+                    className="mt-auto p-1 mt-[10px] text-[16px] text-center text-black font-bold xl:text-[18px]"
                   >
                     {e.name}
                   </h3>
