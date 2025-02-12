@@ -8,12 +8,12 @@ import Flower2 from "@/assets/flower2.png";
 import Image from "next/image";
 import Link from "next/link";
 import { EmblaCarousel } from "@/components/projeto/EmblaCarousel";
-// import obterProjects from "@/data/service/obterProject";
 import getMembers from "@/data/service/getMember";
 import ScrollToTopButton from "./scrollBtn";
+import getNews from "@/data/service/getNews";
 
-// const projects = await obterProjects();
 const members = await getMembers();
+const news = await getNews();
 
 export default function Home() {
   return (
@@ -246,7 +246,7 @@ export default function Home() {
         <h1 className="text-[45px] text-center 2xl:text-[70px] xl:text-[50px] lg:text-[40px] md:text-[30px] font-bahianita">
           Projetos
         </h1>
-        <EmblaCarousel/>
+        <EmblaCarousel />
       </div>
 
       <div className="flex justify-center mt-[50px] mb-[50px]">
@@ -254,6 +254,54 @@ export default function Home() {
           src={Flower1}
           alt="flor"
           className="w-[100px] 2xl:w-[200px] xl:w-[130px] lg:w-[120px]  md:w-[110px]"
+        />
+      </div>
+
+      <div id="news">
+        <h1 className="text-[45px] text-center 2xl:text-[70px] xl:text-[50px] lg:text-[40px] md:text-[30px] font-bahianita">
+          Notícias
+        </h1>
+        <div className="h-full flex justify-center items-center mt-[10px]">
+          <div className="gap-8 flex justify-center flex-wrap">
+            {news.map((e) => (
+              <div className="flex items-center justify-center">
+                <div className="flex flex-col items-center w-[330px] md:h-[380px] xl:h-[400px] rounded-[6px] bg-[#EDDAFF]">
+                  <Image
+                    className="flex justify-center items-center h-[170px] xl:h-[190px] rounded-t-[6px] mt-[10px]text-center object-cover"
+                    width={330}
+                    height={140}
+                    src={e.image}
+                    alt={"capa-notícia"}
+                  />
+                  <h3
+                    key={e.id}
+                    className=" p-3 mt-[10px] text-[18px] text-center text-black font-bold font-arya xl:text-[20px]"
+                  >
+                    {e.name}
+                  </h3>
+                  <div className="p-4 mt-auto">
+                    <button className="bg-gradient-to-r from-[#bf4e83e1] to-[#000a90d4] px-6 py-2 text-white uppercase font-bold rounded-md">
+                      <Link
+                        href={e.link}
+                        target="_blank"
+                        className="  lg:text-[18px] md:text-[14px]"
+                      >
+                        Acessar
+                      </Link>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="flex justify-center mt-[50px] mb-[50px]">
+        <Image
+          src={Flower2}
+          alt="flor"
+          className="w-[100px] 2xl:w-[200px] xl:w-[130px] lg:w-[120px] md:w-[110px]"
         />
       </div>
 
@@ -265,16 +313,20 @@ export default function Home() {
           <div className="flex justify-center flex-wrap">
             {members.map((member) => (
               <div className="p-5 flex flex-col items-center">
-                <Image className="flex justify-center items-center w-[150px] h-[150px] 2xl:w-[190px] 2xl:h-[190px] rounded-full mt-[10px]text-center bg-[#ffb4b4] object-cover" width={150} height={150} src={member.image} alt={"foto-perfil"}/>
+                <Image
+                  className="flex justify-center items-center w-[150px] h-[150px] 2xl:w-[190px] 2xl:h-[190px] rounded-full mt-[10px]text-center bg-[#ffb4b4] object-cover"
+                  width={150}
+                  height={150}
+                  src={member.image}
+                  alt={"foto-perfil"}
+                />
                 <h3
                   key={member.id}
                   className="mt-[10px] text-center text-black font-bold font-arya text-[22px] xl:text-[28px]"
                 >
                   {member.name}
                 </h3>
-                <h5
-                  className="mt-[10px] text-center text-black xl:text-25px"
-                >
+                <h5 className="mt-[10px] text-center text-black xl:text-25px">
                   {member.description}
                 </h5>
               </div>

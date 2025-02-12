@@ -26,6 +26,8 @@ export default function Nav(){
 
                 <NavItem text="Projetos" href="#projects" />
 
+                <NavItem text="Notícias" href="#news" />
+
                 <NavItem text="Membros" href="#members" />
             </nav>
 
