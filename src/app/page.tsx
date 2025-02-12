@@ -45,7 +45,7 @@ export default function Home() {
 
           <br />
 
-          <button className="bg-gradient-to-r from-[#bf4e83e1] to-[#000a90d4] px-6 py-2 text-white uppercase font-bold rounded-md">
+          <button className="bg-gradient-to-r from-[#bf4e83e1] to-[#000a90d4] px-6 py-2 text-white uppercase font-bold rounded-md shadow-md">
             <Link href="#aboutUs" className="  lg:text-[18px] md:text-[14px]">
               Saiba mais
             </Link>
@@ -265,7 +265,7 @@ export default function Home() {
           <div className="gap-8 flex justify-center flex-wrap">
             {news.map((e) => (
               <div className="flex items-center justify-center">
-                <div className="flex flex-col items-center w-[330px] md:h-[380px] xl:h-[400px] rounded-[6px] bg-[#EDDAFF]">
+                <div className="flex flex-col items-center w-[330px] md:h-[380px] xl:h-[400px] rounded-[6px] bg-[#6A74FF]/10 hover:bg-[#6A74FF]/30 shadow-md">
                   <Image
                     className="flex justify-center items-center h-[170px] xl:h-[190px] rounded-t-[6px] mt-[10px]text-center object-cover"
                     width={330}
@@ -280,7 +280,7 @@ export default function Home() {
                     {e.name}
                   </h3>
                   <div className="p-4 mt-auto">
-                    <button className="bg-gradient-to-r from-[#bf4e83e1] to-[#000a90d4] px-6 py-2 text-white uppercase font-bold rounded-md">
+                    <button className="bg-gradient-to-r from-[#bf4e83e1] to-[#000a90d4] px-6 py-2 text-white uppercase font-bold rounded-md shadow-lg">
                       <Link
                         href={e.link}
                         target="_blank"
@@ -314,7 +314,7 @@ export default function Home() {
             {members.map((member) => (
               <div className="p-5 flex flex-col items-center">
                 <Image
-                  className="flex justify-center items-center w-[150px] h-[150px] 2xl:w-[190px] 2xl:h-[190px] rounded-full mt-[10px]text-center bg-[#ffb4b4] object-cover"
+                  className="flex justify-center items-center w-[150px] h-[150px] 2xl:w-[190px] 2xl:h-[190px] rounded-full mt-[10px]text-center bg-[#ffb4b4] object-cover border-l-8 border-[#F25764]"
                   width={150}
                   height={150}
                   src={member.image}

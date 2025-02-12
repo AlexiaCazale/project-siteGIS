@@ -34,7 +34,7 @@ export function EmblaCarousel() {
               <Link href={`/projects/${project.id}`}>
                 <div
                   key={project.id}
-                  className="relative w-[160px] 2xl:w-[210px] 2xl:h-[280px] rounded-[8px] mt-[10px] text-center bg-[#DDBEFB] hover:bg-[#A164DE]/80 duration-200 ease-in-out"
+                  className="relative w-[160px] 2xl:w-[210px] 2xl:h-[280px] rounded-[8px] mt-[10px] text-center bg-[#DCC9EF] hover:bg-[#A164DE]/60 duration-200 ease-in-out shadow-md"
                 >
                   <Image
                     src={project.image}
