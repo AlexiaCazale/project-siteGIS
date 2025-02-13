@@ -19,8 +19,6 @@ export default function NavDetails(){
 
                 <NavItem text="Sobre" href="" />
 
-                {% comment %} <NavItem text="Fotos" href="#fotos" /> {% endcomment %}
-
             </nav>
 
             <button className="block md:hidden" onClick={() => setOpenMenu(!openMenu)}>
