@@ -56,20 +56,15 @@ export default function ProjectDetails(props: ProjectDetailsProps) {
           Galeria de fotos
         </h1>
         <div></div>
-        <div className="flex justify-center mb-[20px]">
-          <button className="bg-gradient-to-r from-[#bf4e83e1] to-[#000a90d4] px-6 py-2 text-white uppercase font-bold rounded-md">
-            <Link href="/#projects">Voltar</Link>
-          </button>
         </div>
-      </div>
-
-      <div className="flex justify-center mt-[50px] mb-[50px]">
+        
+        <div className="flex justify-center mt-[50px] mb-[50px]">
         <Image
           src={Flower2}
           alt="flor"
           className="w-[100px] 2xl:w-[200px] xl:w-[130px] lg:w-[120px]  md:w-[110px]"
-        />
-      </div> */}
+          />
+          </div> */}
 
       <div>
         <h1
@@ -78,8 +73,14 @@ export default function ProjectDetails(props: ProjectDetailsProps) {
         >
           Veja outros projetos
         </h1>
-        <EmblaCarousel/>
-        <br/>
+        <EmblaCarousel />
+        <br />
+        
+        <div className="flex justify-center mb-[20px]">
+          <button className="bg-gradient-to-r from-[#bf4e83e1] to-[#000a90d4] px-6 py-2 text-white uppercase font-bold rounded-md">
+            <Link href="/#projects">Voltar</Link>
+          </button>
+        </div>
       </div>
     </PaginaDetails>
   );
