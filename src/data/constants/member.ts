@@ -27,31 +27,31 @@ const members: Member[] = [
         },
         {
             id:  4,
-            name: "Yasmin",
+            name: "Yasmin Ouvinhas",
             description: "Estudante",
             image: "/members/yasmin.jpeg"
         },
         {
             id: 5,
-            name: "Letícia",
+            name: "Letícia Garcia",
             description: "Estudante",
             image: "/members/leticia.jpeg"
         },
         {
             id:  6,
-            name: "Rayssa",
+            name: "Rayssa Maely",
             description: "Estudante",
             image: "/members/rayssa.jpeg"
         },
         {
             id: 7,
-            name: "Evelyn",
+            name: "Evelyn Cassionotte",
             description: "Estudante",
             image: "/members/evelyn.jpeg"
         },
         {
             id: 8,
-            name: "Brenda",
+            name: "Brenda Bussolo",
             description: "Estudante",
             image: "/members/brenda.jpeg"
         },

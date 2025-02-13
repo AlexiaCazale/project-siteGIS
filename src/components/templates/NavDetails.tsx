@@ -19,7 +19,7 @@ export default function NavDetails(){
 
                 <NavItem text="Sobre" href="" />
 
-                <NavItem text="Fotos" href="#fotos" />
+                {% comment %} <NavItem text="Fotos" href="#fotos" /> {% endcomment %}
 
             </nav>
 

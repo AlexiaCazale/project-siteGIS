@@ -48,7 +48,7 @@ export default function ProjectDetails(props: ProjectDetailsProps) {
         />
       </div>
 
-      <div>
+      {/* <div>
         <h1
           className="text-center text-[45px] 2xl:text-[75px] xl:text-[50px] lg:text-[40px] font-bahianita md:text-[30px]"
           id="fotos"
@@ -69,7 +69,7 @@ export default function ProjectDetails(props: ProjectDetailsProps) {
           alt="flor"
           className="w-[100px] 2xl:w-[200px] xl:w-[130px] lg:w-[120px]  md:w-[110px]"
         />
-      </div>
+      </div> */}
 
       <div>
         <h1
