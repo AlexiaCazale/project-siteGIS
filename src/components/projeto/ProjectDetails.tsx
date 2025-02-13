@@ -79,6 +79,7 @@ export default function ProjectDetails(props: ProjectDetailsProps) {
           Veja outros projetos
         </h1>
         <EmblaCarousel/>
+        <br/>
       </div>
     </PaginaDetails>
   );

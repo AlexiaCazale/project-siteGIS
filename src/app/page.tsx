@@ -265,8 +265,8 @@ export default function Home() {
           <div className="gap-8 flex justify-center flex-wrap">
             {news.map((e) => (
               <div className="flex items-center justify-center">
-                <div className="flex flex-col items-center w-[330px] md:h-[380px] xl:h-[400px] rounded-[6px] bg-[#6A74FF]/10 md:hover:bg-[#6A74FF]/30 shadow-md">
-                  <Image
+                <div className="flex flex-col items-center shadow-md bg-[##1d1b1e] ">
+                  {/* <Image
                     className="flex justify-center items-center h-[170px] xl:h-[190px] rounded-t-[6px] mt-[10px]text-center object-cover"
                     width={330}
                     height={140}
@@ -278,7 +278,15 @@ export default function Home() {
                     className="mt-auto p-1 mt-[10px] text-[16px] text-center text-black font-bold xl:text-[18px]"
                   >
                     {e.name}
-                  </h3>
+                  </h3> */}
+
+                  <Image className="flex justify-center items-center md:w-[340px] md:h-[340px] 2xl:w-[400px] 2xl:h-[400px] rounded-t-[6px] mt-[10px]text-center object-cover shadow-lg"
+                    src={e.image}
+                    alt={"capa-notícia"}
+                    width={300}
+                    height={300}
+                  />
+
                   <div className="p-4 mt-auto">
                     <button className="bg-gradient-to-r from-[#bf4e83e1] to-[#000a90d4] px-6 py-2 text-white uppercase font-bold rounded-md shadow-lg">
                       <Link
